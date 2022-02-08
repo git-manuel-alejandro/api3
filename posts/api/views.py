@@ -9,7 +9,7 @@ from rest_framework.permissions import IsAuthenticated, IsAdminUser, IsAuthentic
 
 
 class PostModelViewSet(ModelViewSet):
-    permission_classes = [IsAuthenticated]
+    # permission_classes = [IsAuthenticated]
     serializer_class = PostSerializer
     queryset = Post.objects.all()
     # http_method_names = ['get']
